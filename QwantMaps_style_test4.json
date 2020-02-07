@@ -38,67 +38,33 @@
     {
       "id": "landcover-glacier",
       "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
+      "metadata": {"mapbox:group": "1444849388993.3071"},
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "filter": [
-        "==",
-        "subclass",
-        "glacier"
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
+      "filter": ["==", "subclass", "glacier"],
+      "layout": {"visibility": "visible"},
       "paint": {
         "fill-color": "#fff",
-        "fill-opacity": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              0.9
-            ],
-            [
-              10,
-              0.3
-            ]
-          ]
-        }
+        "fill-opacity": {"base": 1, "stops": [[0, 0.9], [10, 0.3]]}
       }
     },
     {
       "id": "landuse-residential",
       "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
+      "metadata": {"mapbox:group": "1444849388993.3071",}
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": ["all", ["in", "class", "residential", "suburb", "neighbourhood"]],
       "paint": {
         "fill-color": {
           "base": 1,
-          "stops": [
-            [
-              12,
-              "hsla(0, 6%, 93%, 0.4)"
-            ],
-            [
-              16,
-              "hsla(0, 5%, 91%, 0.2)"
-            ]
-          ]
-        }
+          "stops": [[12, "hsla(0, 6%, 93%, 0.4)"], [16, "hsla(0, 5%, 91%, 0.2)"]]}
       }
     },
     {
       "id": "landuse-commercial",
       "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
+      "metadata": {"mapbox:group": "1444849388993.3071"}
       "source": "openmaptiles",
       "source-layer": "landuse",
       "filter": [
@@ -122,7 +88,7 @@
       "id": "landuse-industrial",
       "type": "fill",
       "metadata": {
-        "mapbox:group": "1444849388993.3071",
+        "mapbox:group": "1444849388993.3071"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -172,257 +138,6 @@
           ]
         }
       }
-    },
-    {
-      "id": "park-outline",
-      "type": "line",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071"
-      },
-      "source": "openmaptiles",
-      "source-layer": "park",
-      "filter": [
-        "==",
-        "$type",
-        "Polygon"
-      ],
-      "layout": {},
-      "paint": {
-        "line-color": {
-          "base": 1,
-          "stops": [
-            [
-              6,
-              "hsla(96, 40%, 49%, 0.36)"
-            ],
-            [
-              8,
-              "hsla(96, 40%, 49%, 0.66)"
-            ]
-          ]
-        },
-        "line-dasharray": [
-          3,
-          3
-        ]
-      }
-    },
-    {
-      "id": "landuse-cemetery",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "cemetery"
-      ],
-      "paint": {
-        "fill-color": "#e0e4dd"
-      }
-    },
-    {
-      "id": "landuse-hospital",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "hospital"
-      ],
-      "paint": {
-        "fill-color": "#4AA0E7",
-        "fill-outline-color": "#4AA0E7",
-        "fill-opacity": 0.1
-      }
-    },
-    {
-      "id": "landuse-school",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "filter": [
-        "in",
-        "class",
-        "school",
-        "kindergarten",
-        "university"
-      ],
-      "paint": {
-        "fill-color": "#e3e3e3"
-      }
-    },
-    {
-      "id": "landuse-railway",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "filter": [
-        "==",
-        "class",
-        "railway"
-      ],
-      "paint": {
-        "fill-color": "hsla(30, 19%, 90%, 0.4)"
-      }
-    },
-    {
-      "id": "landcover-garden",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "landcover",
-      "filter": [
-        "all",
-        ["==", "class", "grass"],
-        ["in", "subclass", "park", "garden"]
-      ],
-      "paint": {
-        "fill-color": "#c0eab8"
-      }
-    },
-    {
-      "id": "landcover-grass",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "landcover",
-      "filter": [
-        "all",
-        ["==", "class", "grass"],
-        ["!in", "subclass", "park", "garden"]
-      ],
-      "paint": {
-        "fill-color": "#e0f2d3"
-      }
-    },
-    {
-      "id": "landcover-wood",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "landcover",
-      "filter": [
-        "==",
-        "class",
-        "wood"
-      ],
-      "paint": {
-        "fill-color": "#cae4be",
-        "fill-opacity": 1,
-        "fill-outline-color": "hsla(0, 0%, 0%, 0.03)",
-        "fill-antialias": {
-          "base": 1,
-          "stops": [
-            [
-              0,
-              false
-            ],
-            [
-              9,
-              true
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "id": "landcover-grass-park",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "park",
-      "filter": [
-        "==",
-        "class",
-        "public_park"
-      ],
-      "paint": {
-        "fill-color": "#d8e8c8",
-        "fill-opacity": 0.8
-      }
-    },
-    {
-      "id": "landuse-aerodrome",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "aeroway",
-      "filter": [
-        "in",
-        "class",
-        "aerodrome"
-      ],
-      "paint": {
-        "fill-color": "#8665E7",
-        "fill-opacity": 0.06
-      }
-    },
-    {
-      "id": "landuse-bus",
-      "type": "fill",
-      "metadata": {
-        "mapbox:group": "1444849388993.3071",
-      },
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "filter": [
-        "in",
-        "class",
-        "bus_station"
-      ],
-      "paint": {
-        "fill-color": "#8665E7",
-        "fill-opacity": 0.06
-      }
-    },
-    {
-      "id": "landuse-entertainment",
-      "type": "fill",
-      "metadata": {"mapbox:group": "1444849388993.3071", "taxonomy:group": "landuse"},
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "filter": ["in", "class", "theme_park", "zoo"],
-      "paint": { "fill-color": "#E93865", "fill-opacity": 0.05}
-    },
-    {
-      "id": "landuse-pitch",
-      "type": "fill",
-      "metadata": {"mapbox:group": "1444849388993.3071", "taxonomy:group": "landuse"},
-      "source": "openmaptiles",
-      "source-layer": "landuse",
-      "filter": [
-        "in",
-        "class",
-        "pitch",
-        "playground",
-        "stadium"
-      ],
-      "paint": { "fill-color": "rgb(105,150,108)", "fill-opacity": 0.2}
     }
   ],
   "id": "bright",
