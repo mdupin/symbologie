@@ -107,7 +107,7 @@
       "url": "https://api.maptiler.com/tiles/v3/tiles.json?key={key}"
     }
   },
-  "sprite": "{sprite_url}",
+  "sprite": "https://openmaptiles.github.io/osm-bright-gl-style/sprite",
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "layers": [
     {
