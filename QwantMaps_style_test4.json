@@ -2,86 +2,6 @@
   "version": 8,
   "name": "Qwant Style Basic",
   "metadata": {
-    "taxonomy:title": "Qwant Style Basic",
-    "taxonomy:groups": [
-      {
-        "id": "admin-boundaries",
-        "type": "line",
-        "title": "Administrative boundaries"
-      },
-      {
-        "id": "landuse",
-        "type": "polygon",
-        "title": "Land use",
-        "zooms": 13
-      },
-      {
-        "id": "waterway",
-        "type": "line",
-        "title": "Waterways",
-        "zooms": {
-          "minzoom": 5,
-          "maxzoom": 20
-        }
-      },
-      {
-        "id": "building",
-        "type": "polygon",
-        "title": "Buildings",
-        "zooms": 20
-      },
-      {
-        "id": "tunnels",
-        "type": "line",
-        "title": "Roads Tunnels",
-        "zooms": {
-          "minzoom": 5,
-          "maxzoom": 20
-        }
-      },
-      {
-        "id": "roads",
-        "type": "line",
-        "title": "Roads",
-        "zooms": {
-          "minzoom": 5,
-          "maxzoom": 20
-        }
-      },
-      {
-        "id": "bridges",
-        "type": "line",
-        "title": "Roads Bridges",
-        "zooms": {
-          "minzoom": 5,
-          "maxzoom": 20
-        }
-      },
-      {
-        "id": "roads-labels",
-        "type": "symbol",
-        "title": "Water Labels",
-        "zooms": {
-          "minzoom": 9,
-          "maxzoom": 20
-        }
-      },
-      {
-        "id": "waterway-labels",
-        "type": "symbol",
-        "title": "Water Labels",
-        "zooms": {
-          "minzoom": 11,
-          "maxzoom": 20
-        }
-      },
-      {
-        "id": "places",
-        "type": "symbol",
-        "title": "Political & Place Labels",
-        "zooms": [2, 4, 6, 8, 10, 12, 14, 16]
-      }
-    ],
     "mapbox:autocomposite": false,
     "mapbox:groups": {
       "1444849242106.713": {"collapsed": false, "name": "Places"},
@@ -120,7 +40,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -154,7 +73,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -180,7 +98,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -206,7 +123,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -232,7 +148,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "park",
@@ -297,7 +212,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -315,7 +229,7 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
+
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -335,7 +249,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -355,7 +268,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
@@ -373,7 +285,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -391,7 +302,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -409,7 +319,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landcover",
@@ -442,7 +351,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "park",
@@ -461,7 +369,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "aeroway",
@@ -480,7 +387,6 @@
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849388993.3071",
-        "taxonomy:group": "landuse"
       },
       "source": "openmaptiles",
       "source-layer": "landuse",
