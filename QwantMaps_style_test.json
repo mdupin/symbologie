@@ -113,7 +113,7 @@
     {
       "id": "background",
       "type": "background",
-      "paint": {"background-color": "#F8F8F8"}
+      "paint": {"background-color": "#f8f8f8"}
     },
     {
       "id": "landcover-glacier",
